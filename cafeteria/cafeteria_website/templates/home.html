@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="image-container2">
+    <img src="{% static 'coffee.png' %}" alt="Coffee Cup">
+    <div class="overlay-text">
+        <h1>The best quality service is for you</h1>
+        <p>Many delicous iceCream,cake and more than that waiting you to try</p>
+        <p>Let's take a look at our cafeteria</p>
+        
+        <div class="button" ><a href="{% url 'dessert' %} " >Let's go</a></div>
+    </div> <!-- Text overlay -->
+</div>
+{% endblock %}

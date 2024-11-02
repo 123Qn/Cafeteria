@@ -1,0 +1,569 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dessert{% endblock %}
+
+{% block content %}
+<div class="pancake">
+<img src="{% static 'pancake.jpg' %}" alt="Coffee Cup">
+<div class="overlay-text-dessert">
+    <h1>Dessert</h1>
+    <p>Daily fresh,homemade from the best ingredients</p>
+</div>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">
+        
+         <a href="#ice-cream-menu">
+            <img src="{% static 'icream.jpg' %}" alt="Ice-Cream" />
+            <p>Ice-Cream</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="#pie-menu">
+         <img src="{% static 'pie.jpg' %}" alt="Coffee Cup">
+         <p>Pie
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href ="#cheesecake-menu">
+        <img src="{% static 'cheese.jpg' %}" alt="Coffee Cup">
+        <p>Cheese Cake
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="#pudding-menu">
+        <img src="{% static 'pudding.jpg' %}" alt="Coffee Cup">
+        <p>Pudding
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="#cupcake-menu">
+        <img src="{% static 'cake.jpg' %}" alt="Coffee Cup">
+        <p>Cake - Cup Cake
+        </a>
+    </div>
+</div>
+
+<!--iceCream-->
+<div class="iceCream" id="ice-cream-menu" >
+    <div class="header-container">
+        <h3 style="color: white;">Ice-Cream</h3>
+    </div>
+    <div class="grid-container-menu">
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/vanila.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Vanilla Ice-cream </p>
+                    </div>
+                    <div class="price">
+                        $3.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/choc.jpg' %}" alt="choc Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, Chocolate flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Chocolate Ice-cream </p>
+                    </div>
+                    <div class="price">
+                        $3.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/ButterScotch-Waffle-IceCream_Scoop.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Butterscotch in cone </p>
+                    </div>
+                    <div class="price">
+                        $6.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/Coconut.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, coconut flavoring,coconut"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Coconut Ice-cream </p>
+                    </div>
+                    <div class="price">
+                        $4.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/mint-choc.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Mint chocolate chip </p>
+                    </div>
+                    <div class="price">
+                        $6.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/gelato.jpg' %}" alt="Gelato Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Gelato </p>
+                    </div>
+                    <div class="price">
+                        $6.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/roll.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Roll ice-cream </p>
+                    </div>
+                    <div class="price">
+                        $6.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/ss.jpg' %}" alt="softserve">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Soft Serve </p>
+                    </div>
+                    <div class="price">
+                        $1.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/boat.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Boat </p>
+                    </div>
+                    <div class="price">
+                        $10.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'ice-cream/flavor.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Others flavour </p>
+                    </div>
+                    <div class="price">
+                        $3.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--Pie-->
+<div class="pie" id="pie-menu">
+    <div class="header-container">
+        <h3 style="color: white;">Pie</h3>
+    </div>
+    <div class="grid-container-menu">
+        <div class="grid-item-menu">
+            <img src="{% static 'pie/apple.jpg' %}" alt="apple pie">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Apple Pie</p>
+                    </div>
+                    <div class="price">
+                        $10.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pie/blue.jpg' %}" alt="bb">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, Chocolate flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>BlueBerry Pie</p>
+                    </div>
+                    <div class="price">
+                        $11.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pie/lime.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Key Lime Pie </p>
+                    </div>
+                    <div class="price">
+                        $10.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pie/pumkin.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, coconut flavoring,coconut"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Pumkin Pie</p>
+                    </div>
+                    <div class="price">
+                        $10.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pie/lemon.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Lemon mergingue pie </p>
+                    </div>
+                    <div class="price">
+                        $11.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--cheese cake-->
+<div class="cheesecake" id ="cheesecake-menu">
+    <div class="header-container">
+        <h3 style="color: white;">Cheese Cake</h3>
+    </div>
+
+    <div class="grid-container-menu">
+        <div class="grid-item-menu">
+            <img src="{% static 'pie/cheeseCake.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Cheese Cake </p>
+                    </div>
+                    <div class="price">
+                        $13.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--pudding-->
+<div class="pudding" id="pudding-menu">
+    <div class="header-container">
+        <h3 style="color: white;">Pudding</h3>
+    </div>
+    <div class="grid-container-menu">
+        <div class="grid-item-menu">
+            <img src="{% static 'pudding/rice.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Rice Pudding</p>
+                    </div>
+                    <div class="price">
+                        $7.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pudding/flan.jpg' %}" alt="choc Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, Chocolate flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Flan </p>
+                    </div>
+                    <div class="price">
+                        $8.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pudding/chocpudd.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Chocolate Pudding</p>
+                    </div>
+                    <div class="price">
+                        $6.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pudding/creme.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, coconut flavoring,coconut"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Creme Brulee</p>
+                    </div>
+                    <div class="price">
+                        $9.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'pudding/ch.jpg' %}" alt="Waffle Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring,Waffle"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Christmas Pudding</p>
+                    </div>
+                    <div class="price">
+                        $9.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--cake-->
+
+<div class="cake-cupcake" id="cupcake-menu">
+    <div class="header-container">
+        <h3 style="color: white;">Cake/Cup-Cake</h3>
+    </div>
+    <div class="grid-container-menu">
+        <div class="grid-item-menu">
+            <img src="{% static 'cupcake/cc.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Cup Cake</p>
+                    </div>
+                    <div class="price">
+                        $3.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'cupcake/m.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Mousse cake</p>
+                    </div>
+                    <div class="price">
+                        $6.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'cupcake/w.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Waffle</p>
+                    </div>
+                    <div class="price">
+                        $4.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'cupcake/p.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Pancake</p>
+                    </div>
+                    <div class="price">
+                        $4.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'cupcake/mc.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Mochi</p>
+                    </div>
+                    <div class="price">
+                        $3.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'cupcake/cs.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Croissant</p>
+                    </div>
+                    <div class="price">
+                        $2.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-menu">
+            <img src="{% static 'cupcake/d.jpg' %}" alt="Vanilla Ice-Cream">
+            <span class="tooltip-icon" title="Ingredients:Milk, cream, sugar, vanilla flavoring"><img src="{% static 'i.png' %}" alt="Coffee Cup"></span>
+            <div class="item-detail">
+                <div class="description">
+                    <div class="item-name">
+                        <p>Donut</p>
+                    </div>
+                    <div class="price">
+                        $4.50
+                    </div>
+                </div>
+                <div class="buy">
+                    Buy
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</div>
+{% endblock %}

@@ -1,0 +1,335 @@
+body {
+    margin: 0; /* Remove default body margin */
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly across the header */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Optional: adds some padding around the header */
+    /* Optional: background color */
+    background-color: white;
+}
+
+.left, .nav, .right {
+    padding: 5px 10px; /* Optional: styling for each item */
+}
+
+/* Optional: Align text within each div */
+.left p, .nav p, .right p {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+header img{
+    width: 50px;
+    height: 50px;
+}
+header .nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.nav :hover{
+    text-decoration: underline;
+    color: orange;
+}
+.right img{
+    width: 20px;
+    height: 20px;
+}
+.image-container {
+    display: flex; /* Use flex to align image and dot */
+    align-items: center; /* Center items vertically */
+}
+
+.red-dot {
+    width: 8px; /* Size of the dot */
+    height: 8px; /* Size of the dot */
+    background-color: red; /* Red color for the dot */
+    border-radius: 50%; /* Makes it a circle */
+    margin-left: 5px; /* Space between the image and dot */
+}
+.image-container2 {
+    position: relative; /* Enables absolute positioning for child elements */
+    display: inline-block; /* Adjust as needed to fit your layout */
+    width: 100%; /* Ensure the container takes full width of its parent */
+}
+
+.image-container2 img {
+    width: 100%; /* Ensures the image stretches to fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.red-dot {
+    width: 8px; /* Size of the dot */
+    height: 8px; /* Size of the dot */
+    background-color: red; /* Red color for the dot */
+    border-radius: 50%; /* Makes it a circle */
+    margin-left: 5px; /* Space between the image and dot */
+}
+
+.overlay-text {
+    position: absolute; /* Allows positioning over the image */
+    top: 25%; /* Adjust as needed */
+    left: 40px; /* Adjust as needed */
+    color: white; /* Text color */
+    padding: 5px; /* Optional: padding around the text */
+    border-radius: 5px; /* Optional: rounded corners */
+    /* Adjust text size as needed */
+    z-index: 1; /* Ensures text is above the image */
+    font-family: 'Dancing Script', cursive;
+    font-size: larger;
+}
+.button{
+    background-color: rgb(255, 218, 98);
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+   
+}
+.button a{
+    text-decoration: none;
+}
+/*footer*/
+
+footer{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 168, 71);
+}
+.footer-img{
+    margin-top: 20px;
+    margin-left: 50%;
+}
+.pancake img{
+   
+  width: 100%;
+  height: 500px;
+}
+.grid-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(6, 1fr); /* Create 6 equal columns */
+    justify-items: center; /* Center items horizontally in each grid cell */
+    align-items: center; /* Center items vertically in each grid cell */
+    
+}
+.grid-container
+
+.grid-item {
+    background-color:rgb(170, 215, 81); /* Background color for items */
+    padding: 20px; /* Padding for items */
+    text-align: center; /* Center text */
+    font-family: 'Dancing Script', cursive; /* Use your desired font */
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+}
+.grid-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.grid-item img {
+    width: 212.5px; /* Fixed width for images */
+    height: 212.5px; /* Fixed height for images */
+    border-radius: 100%; /* Makes it circular */
+}
+
+/*menu*/
+.header-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100px; /* Adjust height as needed */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.grid-container-menu {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+    justify-items: center; /* Center items horizontally in each grid cell */
+    align-items: start; /* Align items at the start */
+   
+}
+
+.grid-item-menu {
+    background: linear-gradient(135deg, #ffecb3, #ffc107);
+    background-color: rgb(255, 177, 22); /* Background color for items */
+    padding: 20px; /* Padding for items */
+    text-align: center; /* Center text */
+    font-family: 'Dancing Script', cursive; /* Use your desired font */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.grid-item-menu:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.grid-item-menu img {
+    width: 212.5px; /* Fixed width for images */
+    height: 212.5px; /* Fixed height for images */
+    border-radius: 50%; /* Makes it circular */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.item-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space between description and buy button */
+    align-items: center; /* Center vertically */
+    margin-top: 10px; /* Space above item details */
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+}
+
+.price {
+    font-weight: bold; /* Make price bold */
+    margin-top: 5px; /* Space above price */
+}
+
+.buy {
+    width: 70px; /* Slightly wider for text */
+    background-color:#ff6f61;
+    color: white; /* White text for contrast */
+    padding: 5px; /* Padding for button */
+    text-align: center; /* Center text in button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+.buy:hover {
+    background-color: darkred; /* Darker shade on hover */
+}
+.tooltip-icon {
+    cursor: pointer; /* Changes cursor to pointer */
+    display: inline-block; /* Allows for better styling */
+    margin-left: 5px; /* Space between the item name and the icon */
+    position: relative; /* For positioning tooltip */
+    color: rgb(13, 13, 13); /* Color of the icon */
+
+}
+.tooltip-icon img{
+    width: 20px;
+    height: 20px;
+}
+
+.tooltip-icon:hover::after {
+    content: attr(title); /* Display the tooltip text */
+    position: absolute; /* Position tooltip */
+    bottom: 100%; /* Position above the icon */
+    left: 50%; /* Center it */
+    transform: translateX(-50%); /* Offset to center */
+    background-color: #333; /* Background color */
+    font-size: x-small;
+    font-family:Arial;
+    color: white; /* Text color */
+    padding: 5px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    white-space: nowrap; /* Prevents text wrapping */
+    z-index: 10; /* Ensure it's above other elements */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth fade in/out */
+}
+
+.tooltip-icon:hover::after {
+    opacity: 1; /* Make it visible */
+    visibility: visible; /* Ensure it's visible on hover */
+}
+
+.iceCream{
+    display: none; /* Hide menu by default */
+}
+.pie{
+    display: none; /* Hide menu by default */
+}
+.cheesecake{
+    display: none; /* Hide menu by default */
+}
+.pudding{
+    display: none; /* Hide menu by default */
+}
+.cake-cupcake{
+    display: none; /* Hide menu by default */
+}
+
+#ice-cream-menu:target {
+    display: block; /* Show menu when target is active */
+}
+#pie-menu:target{
+    display: block;
+}
+#cheesecake-menu:target{
+    display: block;
+}
+#pudding-menu:target{
+    display: block;
+}
+#cupcake-menu:target{
+    display: block;
+}
+/*dessert-welcome*/
+.overlay-text-dessert {
+    position: absolute; /* Allows positioning over the image */
+    top: 25%; /* Adjust as needed */
+    left: 40%; /* Adjust as needed */
+    color: hsl(0, 0%, 0%); /* Text color */
+    padding: 5px; /* Optional: padding around the text */
+    border-radius: 5px; /* Optional: rounded corners */
+    /* Adjust text size as needed */
+    z-index: 1; /* Ensures text is above the image */
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.overlay-text-dessert p{
+    margin-left: -30%;
+}
+.overlay-text-drink {
+    position: absolute; /* Allows positioning over the image */
+    top: 15%; /* Adjust as needed */
+    left: 40%; /* Adjust as needed */
+    color: hsl(0, 100%, 50%); /* Text color */
+    padding: 5px; /* Optional: padding around the text */
+    border-radius: 5px; /* Optional: rounded corners */
+    /* Adjust text size as needed */
+    z-index: 1; /* Ensures text is above the image */
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.overlay-text-dining{
+    position: absolute; /* Allows positioning over the image */
+    top: 25%; /* Adjust as needed */
+    left: 40%; /* Adjust as needed */
+    color: hsl(0, 0%, 100%); /* Text color */
+    padding: 5px; /* Optional: padding around the text */
+    border-radius: 5px; /* Optional: rounded corners */
+    /* Adjust text size as needed */
+    z-index: 1; /* Ensures text is above the image */
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+/*dining*/

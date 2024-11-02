@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}South Cafeteria{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="{% static 'coffee-shop.png' %}" alt="Description of Image">
+        </div>
+        <div class="nav">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'dessert' %}">Desserts</a>
+            <a href="{% url 'drink' %}">Beverages</a>
+            <a href="{% url 'dining' %}">Dining</a>
+
+        </div>
+        <div class="right">
+            <div class="image-container"> <!-- Container for image and dot -->
+                <span class="red-dot"></span> <!-- Red dot element -->
+                <img src="{% static 'coffee-cup.png' %}" alt="Coffee Cup">
+
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}
+        
+        
+        {% endblock %}
+    </main>
+
+    <footer>
+       <div class="footer-img">
+        <img src="{% static 'coffee-cup-paper.png' %}" alt="Coffee Cup">
+       </div>
+    
+
+    </footer>
+</body>
+</html>
